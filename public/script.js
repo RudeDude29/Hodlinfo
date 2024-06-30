@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 dataList.appendChild(tr);
             });
         } catch (error) {
-            console.error(error);
+            console.log(error.message);
         }
     };
     let count = 60; // Initial count valu
