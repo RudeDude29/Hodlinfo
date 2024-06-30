@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors')
-require("../Backend/config/db.js");
-const {dataRoutes} = require('../Backend/routes/dataRoutes.js');
+require("../config/db.js");
+const {dataRoutes} = require('../routes/dataRoutes.js');
 const app = express();
 
 app.use(cors());
