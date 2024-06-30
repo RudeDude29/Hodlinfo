@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HODLINFO Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>HODLINFO</h1>
+            <div class="currency-selection">
+                <button class="currency-btn">INR ▼</button>
+                <button class="currency-btn">BTC ▼</button>
+                <button class="buy-btn" onclick="buy()">BUY BTC</button>
+            </div>
+            <div class="connect-telegram">
+                <div class="indicator"></div>
+                <button class="connect-btn" onclick="link()">Connect Telegram</button>
+                <label class="switch">
+                    <input type="checkbox" id="toggleCheckbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </header>
+        <main>
+            <div class="price-info">
+                <div class="price-change">
+                    <span>0.93 %</span>
+                    <p>5 Mins</p>
+                </div>
+                <div class="price-change">
+                    <span>1.7 %</span>
+                    <p>1 Hour</p>
+                </div>
+                <div class="best-price">
+                    <h2 id="best-price-data"></h2>
+                    <p>Average BTC/INR net price including commission</p>
+                </div>
+                <div class="price-change">
+                    <span>11.05 %</span>
+                    <p>1 Day</p>
+                </div>
+                <div class="price-change">
+                    <span>15.84 %</span>
+                    <p>7 Days</p>
+                </div>
+            </div>
+            <div id="app"></div>
+  <script src="app.js"></script>
+            <div class="price-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Coin</th>
+                            <th>Last Traded Price</th>
+                            <th>Buy / Sell Price</th>
+                            <th>Difference</th>
+                            <th>Savings</th>
+                        </tr> 
+                    </thead>
+                    <tbody id="root">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>Copyright &copy;2024 Designed by: Ashish</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

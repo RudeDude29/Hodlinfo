@@ -1,0 +1,196 @@
+body {
+    background-color: #141621;
+    color: #c8d6e5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #00d1b2;
+}
+
+.currency-selection {
+    display: flex;
+    gap: 10px;
+}
+
+.currency-btn, .buy-btn {
+    background-color: #242936;
+    border: none;
+    color: #00d1b2;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.buy-btn {
+    background-color: #00d1b2;
+    color: #141621;
+}
+
+.connect-telegram {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.indicator {
+    background-color: #00d1b2;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #141621;
+}
+
+.connect-btn {
+    background-color: #00d1b2;
+    color: #141621;
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #00d1b2;
+}
+
+input:checked + .slider:before {
+    transform: translateX(14px);
+}
+
+.price-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #00d1b2;
+}
+
+.price-change span {
+    font-size: 1.5em;
+    display: block;
+}
+
+.best-price {
+    text-align: center;
+}
+
+.best-price h2 {
+    font-size: 3em;
+    margin: 0;
+    color: #c8d6e5;
+}
+
+.price-table {
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 10px;
+    border-spacing: 0 10px;
+    font-size: 1.2em;
+    margin: 20px 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #1b1f2a;
+    color: #868e96;
+    font-weight: normal;
+}
+
+td {
+    background-color: #242936;
+    color: #c8d6e5;
+}
+
+tbody tr {
+    margin-bottom: 10px;
+}
+
+td img.platform-logo {
+    vertical-align: middle;
+    width: 24px;
+    margin-right: 10px;
+}
+
+.positive {
+    color: #00d1b2;
+}
+
+.negative {
+    color: #ff6b6b;
+}
+
+p{
+    font-size: small;
+    text-align: center;
+}
