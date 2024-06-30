@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use('/api',dataRoutes);
-
+app.use("/", express.static(__dirname + "/public"));
 
 app.listen(2700,()=>{
     console.log("-----Server Started-----");
