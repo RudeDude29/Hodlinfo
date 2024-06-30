@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', async () => {
     const fetchData = async () => {
         try {
-            const response = await fetch('http://localhost:2700/api/list', {
+            const response = await fetch('https://hodlinfo-etnh.onrender.com/api/list', {
                 method: 'GET',
                 mode: 'cors',
                 headers: {
