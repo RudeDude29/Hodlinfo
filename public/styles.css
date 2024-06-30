@@ -209,3 +209,50 @@ p{
 h1:hover{
     cursor: pointer;
 }
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .currency-btn, .buy-btn, .connect-btn {
+        font-size: 0.8em;
+        padding: 8px 10px;
+    }
+
+    .indicator {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        font-size: 0.8em;
+    }
+
+    .price-change span {
+        font-size: 1em;
+    }
+
+    .best-price h2 {
+        font-size: 1.5em;
+    }
+
+    table {
+        font-size: 0.8em;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+
+    .price-table {
+        overflow-x: auto; /* Enable horizontal scrolling for tables on mobile */
+    }
+
+    .price-info {
+        flex-direction: column;
+        align-items: center;
+    }
+}
