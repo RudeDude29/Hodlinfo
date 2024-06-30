@@ -190,7 +190,22 @@ td img.platform-logo {
     color: #ff6b6b;
 }
 
+footer{
+    display: flex;
+    justify-content: center;
+}
 p{
     font-size: small;
-    text-align: center;
+    color: grey;
+}
+#support{
+    margin-left:1080px ;
+    text-align: right;
+}
+#support:hover{
+   cursor: pointer;
+}
+
+h1:hover{
+    cursor: pointer;
 }

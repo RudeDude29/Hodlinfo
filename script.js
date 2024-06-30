@@ -54,10 +54,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     
     checkbox.addEventListener('change', () => {
         if (checkbox.checked) {
-            document.body.style.backgroundColor = 'white'; // Change background to white
+            document.body.style.backgroundColor = 'azure'; // Change background to white
             div.style.color='black';
         } else {
-            document.body.style.backgroundColor = 'black'; // Change background to black
+            document.body.style.backgroundColor = '#141621'; // Change background to black
             div.style.color='white';
         }
     });
@@ -74,10 +74,14 @@ document.addEventListener('DOMContentLoaded', async () => {
  
 const button = document.getElementsByClassName('connect-btn')[0];
 const buyButton = document.getElementsByClassName('buy-btn')[0];
+const support = document.getElementById('support');
 const link = ()=>{
     window.location.href = 'https://web.telegram.org/';
 }
 const buy = ()=>{
     window.location.href = 'https://bitcoin.org/en/buy';
+}
+const mail = ()=>{
+    window.location.href = 'mailto:godaraashish029@gmail.com';
 }
 
